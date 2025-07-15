@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI 성격 유형 검사</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 시작 화면 -->
+        <div id="start-page">
+            <h1>MBTI 성격 유형 검사</h1>
+            <p>총 12개의 간단한 질문을 통해 자신의 성격 유형을 알아보세요!</p>
+            <button id="start-btn">검사 시작</button>
+        </div>
+
+        <!-- 질문 화면 -->
+        <div id="question-page" style="display: none;">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <h2 id="question-text"></h2>
+            <div class="answers">
+                <button class="answer-btn"></button>
+                <button class="answer-btn"></button>
+            </div>
+        </div>
+
+        <!-- 결과 화면 -->
+        <div id="result-page" style="display: none;">
+            <h2>당신의 성격 유형은:</h2>
+            <h1 id="mbti-type"></h1>
+            <h3 id="mbti-title"></h3>
+            <p id="mbti-description"></p>
+            <button id="restart-btn">다시 검사하기</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
